@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computational Frontiers of String Theory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+      background-image: url('extracted_media/image24.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: #161b22;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+    }
+    nav {
+      background: #222;
+      color: white;
+      padding: 0.5rem 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(253, 253, 253, 0.95);
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 1rem;
+    }
+    .member {
+      flex: none;
+      background: rgba(243, 243, 243, 0.95);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .member img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+    .member img:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .footer {
+      background: #e5e5e5;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Computational Frontiers of String Theory</h1>
+    <p>A Simons Collaboration uniting theory, geometry, and computation</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#team">Team</a>
+    <a href="#software">Software</a>
+    <a href="#videos">Videos</a>
+  </nav>
+
+  <section id="about">
+    <div class="section-title">About the Collaboration</div>
+    <p>
+      This Simons Collaboration seeks to overcome the computational bottlenecks in string theory and formulate a non-perturbative, computationally tractable framework for quantum gravity. Building on breakthroughs in pure spinor and string field theory, convex optimization, and computational geometry, we aim to understand black hole interiors, cosmological singularities, and realistic compactifications.
+    </p>
+  </section>
+
+  <section id="projects">
+    <div class="section-title">Scientific Vision & Projects</div>
+    <ul>
+      <li><strong>Worldsheet Beyond Perturbation Theory:</strong> Establishing quantum consistency of the pure spinor formalism and computing superstring amplitudes in flux backgrounds.</li>
+      <li><strong>Spacetime from Matrices:</strong> Using convex optimization in matrix models to probe the non-perturbative structure of M-theory.</li>
+      <li><strong>Vacua & Cosmology:</strong> Constructing string vacua with controlled de Sitter solutions and deriving 4D effective theories.</li>
+      <li><strong>Computational Software:</strong> Developing modular open-source tools for string field theory, compactifications, and convex optimization tools.</li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <div class="section-title">Our Team</div>
+    <div class="team-grid">
+      <div class="member"><img src="photos/xi_yin.jpg" alt="Xi Yin"><br>Xi Yin (Harvard, Director)</div>
+      <div class="member"><img src="photos/shai_chester.jpeg" alt="Shai Chester"><br>Shai Chester (Imperial College London, Deputy Director)</div>
+      <div class="member"><img src="photos/liam_mcallister.jpeg" alt="Liam McAllister"><br>Liam McAllister (Cornell)</div>
+      <div class="member"><img src="photos/ashoke_sen.jpeg" alt="Ashoke Sen"><br>Ashoke Sen (ICTS-TIFR)</div>
+      <div class="member"><img src="photos/rajesh_gopakumar.png" alt="Rajesh Gopakumar"><br>Rajesh Gopakumar (ICTS-TIFR)</div>
+      <div class="member"><img src="photos/nathan_berkovits.png" alt="Nathan Berkovits"><br>Nathan Berkovits (Sao Paulo IFT)</div>
+      <div class="member"><img src="photos/lara_anderson.png" alt="Lara Anderson"><br>Lara B. Anderson (Virginia Tech)</div>
+      <div class="member"><img src="photos/juan_maldacena.jpeg" alt="Juan Maldacena"><br>Juan Maldacena (IAS)</div>
+      <div class="member"><img src="photos/henry_lin.jpeg" alt="Henry Lin"><br>Henry Lin (Princeton)</div>
+      <div class="member"><img src="photos/silviu_pufu.jpeg" alt="Silviu Pufu"><br>Silviu S. Pufu (Princeton)</div>
+      <div class="member"><img src="photos/mukund_rangamani.jpeg" alt="Mukund Rangamani"><br>Mukund Rangamani (UC Davis)</div>
+      <div class="member"><img src="photos/lorenz_eberhardt.jpeg" alt="Lorenz Eberhardt"><br>Lorenz Eberhardt (University of Amsterdam)</div>
+      <div class="member"><img src="photos/luis_alday.png" alt="Luis Fernando Alday"><br>Luis Fernando Alday (Oxford)</div>
+      <div class="member"><img src="photos/douglas_stanford.jpeg" alt="Douglas Stanford"><br>Douglas Stanford (Stanford)</div>
+      <div class="member"><img src="photos/aron_wall.jpeg" alt="Aron Wall"><br>Aron Wall (Cambridge)</div>
+    </div>
+  </section>
+
+  <section id="software">
+    <div class="section-title">Software & Outreach</div>
+    <p>
+      The Collaboration is developing unified software frameworks that combine symbolic and numerical capabilities across conformal field theory, matrix models, flux vacua, and string amplitudes. Our long-term goal is an open-source toolkit for computational string theory, supported by a collaborative online workspace and shared repositories.
+    </p>
+  </section>
+
+  <section id="videos">
+    <div class="section-title">Video Recordings</div>
+    <p>Each plenary program, project meeting, and summer school will include recorded lectures, available here for public access. Check back soon for updates!</p>
+  </section>
+
+  <footer class="footer">
+    &copy; Computational Frontiers of String Theory
+  </footer>
+</body>
+</html>
