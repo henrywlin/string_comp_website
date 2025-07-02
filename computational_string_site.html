@@ -12,10 +12,6 @@
       padding: 0;
       background: #fdfdfd;
       color: #333;
-      background-image: url('photos/image24.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
     }
     header {
       background-color: #161b22;
@@ -81,12 +77,92 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background: rgba(253, 253, 253, 0.95);
+    }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    .vision-list {
+      list-style: none;
+      padding: 0;
+    }
+    .vision-list li {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+    .vision-thumb {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-top: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .vision-text {
+      flex: 1;
+      text-align: left;
+      display: block;
+    }
+    .title-bg {
+      background: linear-gradient(rgba(22,27,34,0.72), rgba(22,27,34,0.56)), url('photos/image43.png') center/cover no-repeat;
+      border-radius: 18px;
+      padding: 20rem 1.5rem 20rem 1.5rem;
+      margin: 0 auto 1.5rem auto;
+      max-width: 900px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+    .title-thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .title-bg h1 {
+      color: #fff;
+      margin: 0;
+      font-weight: 600;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .subtitle {
+      color: #f3f3f3;
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 1.75rem;
+      text-align: center;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.18);
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Computational Frontiers of String Theory</h1>
-    <p>A scientific collaboration uniting theory, geometry, and computation</p>
+    <div class="title-bg">
+      <div class="header-title-row">
+        <h1>Computational Frontiers of String Theory</h1>
+      </div>
+      <div class="subtitle">A scientific collaboration uniting theory, geometry, and computation</div>
+    </div>
   </header>
   <nav>
     <a href="#about">About</a>
@@ -105,19 +181,19 @@
 
   <section id="projects">
     <div class="section-title">Scientific Vision & Projects</div>
-    <ul>
-      <li><strong>Worldsheet Beyond Perturbation Theory:</strong> Establishing quantum consistency of the pure spinor formalism and computing superstring amplitudes in flux backgrounds.</li>
-      <li><strong>Spacetime from Matrices:</strong> Using convex optimization in matrix models to probe the non-perturbative structure of M-theory.</li>
-      <li><strong>Vacua & Cosmology:</strong> Constructing string vacua with controlled de Sitter solutions and deriving 4D effective theories.</li>
-      <li><strong>Computational Software:</strong> Developing modular open-source tools for string field theory, compactifications, and convex optimization tools.</li>
+    <ul class="vision-list">
+      <li><img src="photos/image7.png" alt="Worldsheet" class="vision-thumb"><div class="vision-text"><strong>Worldsheet Beyond Perturbation Theory:</strong> Establishing quantum consistency of the pure spinor formalism and computing superstring amplitudes in flux backgrounds.</div></li>
+      <li><img src="photos/matrices.png" alt="Matrices" class="vision-thumb"><div class="vision-text"><strong>Spacetime from Matrices:</strong> Using convex optimization in matrix models to probe the non-perturbative structure of M-theory.</div></li>
+      <li><img src="photos/image17.png" alt="Vacua" class="vision-thumb"><div class="vision-text"><strong>Vacua & Cosmology:</strong> Constructing string vacua with controlled de Sitter solutions and deriving 4D effective theories.</div></li>
+      <li><img src="photos/image2.png" alt="Software" class="vision-thumb"><div class="vision-text"><strong>Computational Software:</strong> Developing modular open-source tools for string field theory, compactifications, and convex optimization tools.</div></li>
     </ul>
   </section>
 
   <section id="team">
     <div class="section-title">Our Team</div>
     <div class="team-grid">
-      <div class="member"><img src="photos/xi_yin.jpg" alt="Xi Yin"><br>Xi Yin (Harvard, Director)</div>
-      <div class="member"><img src="photos/shai_chester.jpeg" alt="Shai Chester"><br>Shai Chester (Imperial College London, Deputy Director)</div>
+      <div class="member"><img src="photos/xi_yin.jpg" alt="Xi Yin"><br>Xi Yin (Harvard)</div>
+      <div class="member"><img src="photos/shai_chester.jpeg" alt="Shai Chester"><br>Shai Chester (Imperial College London)</div>
       <div class="member"><img src="photos/liam_mcallister.jpeg" alt="Liam McAllister"><br>Liam McAllister (Cornell)</div>
       <div class="member"><img src="photos/ashoke_sen.jpeg" alt="Ashoke Sen"><br>Ashoke Sen (ICTS-TIFR)</div>
       <div class="member"><img src="photos/rajesh_gopakumar.png" alt="Rajesh Gopakumar"><br>Rajesh Gopakumar (ICTS-TIFR)</div>
@@ -135,9 +211,9 @@
   </section>
 
   <section id="software">
-    <div class="section-title">Software & Outreach</div>
+    <div class="section-title">Open Source Software</div>
     <p>
-      The Collaboration is developing unified software frameworks that combine symbolic and numerical capabilities across conformal field theory, matrix models, flux vacua, and string amplitudes. Our long-term goal is an open-source toolkit for computational string theory, supported by a collaborative online workspace and shared repositories.
+      The Collaboration is developing unified software frameworks that combine symbolic and numerical capabilities across worldsheet computations, conformal field theory, matrix models, flux vacua, and string amplitudes. Our long-term goal is an open-source toolkit for computational string theory, supported by a collaborative online workspace and shared repositories.
     </p>
   </section>
 
